@@ -6,7 +6,7 @@ public static void main(String[] args) {
     EvenThread ob1 = new EvenThread();
     ob.start();
     ob1.start();
-    
+
 }
 }
 //Create a Java program where two threads run simultaneously, one printing even numbers and the other printing odd numbers
@@ -23,6 +23,7 @@ class EvenThread extends Thread {
         }
     }
 }
+
 class OddThread extends Thread {
     public void run() {
         for (int i = 1; i <= 100; i += 2) {
